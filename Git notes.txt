@@ -1,0 +1,85 @@
+- Changes - in GitHub we call Commit
+- In Git we first add then commit
+
+CONFIGURING GIT :
+ git config --global user.name "My name"
+ git config --global user.email "someone@gmail.com"
+ git config --lists
+
+CLONE & STATUS :
+Clone - Cloning a repository on our local machine  
+command : git clone <--link-->
+
+Status - display the state of the code
+command : git status
+
+cd - Change directory
+cd .. - out of directory
+ls - list all files
+ls -a OR ls -Force : Get all hidden files
+
+4 STAGE OF STATUS: 
+
+1. untracked : new files that git doesn't yet track
+2. modified : changed
+3. staged : file is ready to be committed
+4. unmodified : unchanged
+
+ADD & COMMIT
+add - adds new or changed files in your working directory to the Git staging area.
+git add <--file name-->
+-> add all file : git add .
+
+commit - it is the record of changes
+git commit -m "some msg"
+
+
+Push Command :
+push - upload local repo content to remote repo
+git push origin main
+
+
+Init Command :
+init - used to create a new git repo
+
+git remote add origin <-link->
+git remote -v (to verify remote)
+
+
+Branch Commands :
+git branch (to check branch) 
+git branch -M main (to renae branch)
+git push origin main
+
+git checkout <-branch name-> (to navigate)(one brach to another branch)
+git checkout -b (-new branch name-> (to create new branch)
+git branch -d <-branch nanme-> (to delete branch)
+
+Merging Code (2 Ways) :
+Way 1 :
+git diff <-branch name-> (to compare commit, branches, files & more)
+git merge <-branch name->  (to merge 2 branches)
+
+Way 2 :
+Create a PR (Pull Request)
+
+Pull Command :
+git pull origin main (used to fetch and download content a remote repo and immediately update the local repo to match that content
+
+Resolving Merge Conflicts :
+an event that takes place when Git is unable to automatically resolve differences in code between two commits
+
+Undoing Changes :
+case 1 : staged changes (after but not commit)
+git reset <-file name->
+git reset
+
+case 2 : committed changes (for one commit)
+git reset HEAD~1
+
+case 3 : committed changes (for many commits)
+git reset <-commit hash->
+git reset --hard<-commit hash->
+
+git log (check all commit)
+ 
