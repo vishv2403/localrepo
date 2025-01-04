@@ -64,7 +64,7 @@ Way 2 :
 Create a PR (Pull Request)
 
 Pull Command :
-git pull origin main (used to fetch and download content a remote repo and immediately update the local repo to match that content
+git pull origin main (used to fetch and download content a remote repo and immediately update the local repo to match that content)
 
 Resolving Merge Conflicts :
 an event that takes place when Git is unable to automatically resolve differences in code between two commits
@@ -82,4 +82,7 @@ git reset <-commit hash->
 git reset --hard<-commit hash->
 
 git log (check all commit)
- 
+
+Fork :
+A fork is a new repository that shares code and visibility settings with the origin "upstream" repository.
+- Fork is a rough copy.
